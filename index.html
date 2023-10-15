@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Optimization Assistant</title>
+    <link rel="stylesheet" href="rawr.css">
+   
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">PlanPal</div>
+            <div class="menu-items">
+                <a href="#">Home</a>
+                <a href="#">Tech</a>
+                <a href="#">Products</a>
+                <a href="#" class="sign-up-btn">Sign Up</a>
+            </div>
+        </nav>
+        <header class="hero">
+            <div class="hero-content">
+                <h1>NEXT GENERATION TECHNOLOGY</h1>
+                <p>Experience the AI-Powered Plan Optimization</p>
+            
+            </div>
+        </header>
+        <section class="content">
+            <div class="left-section">
+                <img src="dalleeve.png" alt="Illustration">
+            </div>
+            <div class="right-section">
+                <form id="planForm" onsubmit="displayOccupation(); return false;">
+                    <input type="number" id="age" placeholder="Enter your age">
+                    <input type="text" id="occupation" placeholder="Enter your occupation">
+                    <select id="location">
+                        <option value="rural">Rural</option>
+                        <option value="urban">Urban</option>
+                    </select>
+                    <select id="travels">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-binary">Non-Binary</option>
+                    </select>
+                    <button type="submit">Analyze</button>
+                </form>
+                <div id="output"></div>
+            </div>
+        </section>
+    </div>
+    <script src="d.js"></script>
+</body>
+
+</html>
+

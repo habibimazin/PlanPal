@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, black, #ff0000); /* Vertical red to black gradient */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Wrap elements if screen size is smaller */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.menu-items a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: background 0.3s;
+}
+
+.menu-items a:hover {
+    background: #ff0000;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    padding: 30px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.left-section img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right-section {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+form {
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 20px;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.2); /* Slight red background */
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px; /* Some spacing at the bottom */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5); /* Inner shadow to give depth */
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Outer shadow */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e60000; /* Slightly darker shade on hover */
+    transform: scale(1.05);
+}
